@@ -1,0 +1,23 @@
+.swiper-container {
+    display: flex;
+    flex: 0 1 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    max-height: 700px;
+    max-width: 1024px;
+ }
+
+.text{
+    margin-bottom: 25px;
+}
+.my-swiper-img{
+    max-height: 600px; /*make sure there's a dif between max-height of img and max-height of container so that the image scaling works properly and you can see the caption.*/
+}
+
+@media(max-width: 390px){
+    .text{
+        font-size: .8em;
+        padding-bottom: 15px;
+    }
+}

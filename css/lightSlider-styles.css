@@ -1,0 +1,21 @@
+#lightSlider-portfolio{
+    /*width:420px;*/
+
+}
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+li {
+    display: block;
+   /* float: left;*/
+    /*margin-right: 6px;*/
+    cursor:pointer;
+}
+img {
+    display: block;
+    border-radius: 5px;
+    height: auto;
+    max-width: 100%;
+}
