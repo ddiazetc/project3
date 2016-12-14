@@ -4,46 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
-    <title>Projects by Danny Diaz-Etchevehere</title>
+    <title>Projects</title>
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Taviraj">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Scada">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Unna">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="lightslider-master/src/css/lightslider.css"> 
-    <link rel="stylesheet" href="css/lightSlider-styles.css">   
+    <link rel="stylesheet" href="css/lightSlider-styles.css">
     <link rel="icon" href="images/favicon.ico">
+
+    <?php include 'inc/fonts.inc' ?>
+
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
 <div class="cover">
-<div id="mobile-nav" class="overlay fade fadeOut">
-    <div id= "overlay-content-ID" class="overlay-content" >
-        <a style="color: #c5d6e0" class="mobile-nav-me mobile-nav-a" href="#top" onclick="openNav()"><strong>Danny Diaz-Etchevehere</strong></a>
-        <a href="#Research" class="mobile-nav-a" onclick="openNav()">Research</a>
-        <a href="#Game-Dev" class="mobile-nav-a" onclick="openNav()">Game Development</a>
-        <a href="#Art" class="mobile-nav-a" onclick="openNav()">Art</a>
-        <a href="#About" class="mobile-nav-a" onclick="openNav()">About</a>
-    </div>
-</div>
 
-<span class="hamburger-class" id="hamburger" onclick="openNav()">&#9776;</span>
-
-<div id="barID" class="bar">
-    <div class="menu"></div>
-    <div ><h1><a href="#top" class="me">Danny Diaz-Etchevehere</a></h1></div>
-    <div class="nav-item"><a href="#Research" class="nav-a">Research</a></div>
-    <div class="nav-item"><a href="#Game-Dev" class="nav-a">Game Development</a></div>
-    <div class="nav-item"><a href="#Art" class="nav-a">Art</a></div>
-    <div class="nav-item"><a href="#About" class="nav-a">About</a></div>
-</div>
+<?php include 'inc/nav.inc' ?>
 
 <div class="container">
     <section>
-        <a class="anchor" id="Research"></a>
-        <div id="projects" class="contentitem">
+        <a class="anchor" id="projects"></a>
+        <div class="contentitem">
             <h2 class="section-header">Projects</h2>
+
+            <!--Used JQuery lightSlider for the portfolio with thumbnails. http://sachinchoolur.github.io/lightslider/index.html-->
             <div id="lightSlider-portfolio">
 	            <ul id="lightSlider">
 	            	<li data-thumb="images/proj1-thumb.jpg">
@@ -82,13 +66,13 @@
 	            		<img src="images/linkedin.jpg">
 	            	</li>
 	            	<li data-thumb="images/lab9-thumb.jpg">
-	            		<h3>second Slide</h3>
-	            		<p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+	            		<h3>CSC174 Lab 9</h3>
+	            		<p>I created this website with Jake Socolow. We chose the Japanese Animation company Studio Ghibli as our theme. I created the first section with the hero image and the z-pattern of content, and I did my half of the card-design section. <strong><a href="http://urcsc170.org/ddiazetc/lab9/">Link to site</a></strong>.</p>
 	            		<img src="images/lab9.jpg">
 	            	</li>
 	            	<li data-thumb="images/muffin-thumb.jpg">
-	            		<h3>second Slide</h3>
-	            		<p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+	            		<h3>E-card</h3>
+	            		<p>I created this interactive e-card (not sure if that's the right word for it) for my mom's birthday. It features our dog named Muffin. <strong><a href="http://ddiazetc.github.io/muffin">Link to card</a></strong>.</p>
 	            		<img src="images/muffin.jpg">
 	            	</li>
 	        	</ul>
@@ -96,29 +80,16 @@
         </div><!--projects-->
     </section>
 
-    <footer>
-        Website made by me<br>
-    </footer>
+    <?php include 'inc/footer.inc' ?>
+
 </div><!--container-->
 </div><!--cover-->
 
-<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
-<script src="js/rdm.js"></script>
-
-<script>function myFunction(){
-    var x = document.getElementById("barID");
-
-    if(x.className === "bar"){
-        x.className += " responsive";
-        $('.bar').find('*').addClass('responsive');
-    } else {
-        x.className = "bar";
-        $('.bar').find('*').removeClass('responsive');
-    }
-}</script> 
-
 <!--JQuery-->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
+<script src="js/open-nav.js"></script>
 
 <!--lightslider-->
 <script src="lightslider-master/src/js/lightslider.js"></script>
@@ -132,46 +103,10 @@
 		thumbItem: 9
 	}); 
   });
-
-
 </script>
-
-
-
-<!--transition: opacity doesn't work, but this changes the hamburger -> X -->
-<script>
-    $('.hamburger-class').click(function() {
-        document.getElementById("mobile-nav").style.zIndex = "21";
-         $('.overlay').toggleClass('fadeOut');
-    });
-    $('.mobile-nav-a').click(function() {
-
-        $('.overlay').toggleClass('fadeOut');
-    });
-</script>
-    <!--still have the problem of if the user is in mobile mode and then resizes the window and the hamburger goes away... try using a listener
-    modernweb.com/2014/03/24/using-media-queries-in-javascript-->
 
 <!--Smooth scroll-->
-<!--<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>-->
-<script>
-    // From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
-    //          https://css-tricks.com/snippets/jquery/smooth-scrolling
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 250);
-                    return false;
-                }
-            }
-        });
-    });
-</script>
+<script src="js/smoothscroll.js"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

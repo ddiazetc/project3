@@ -200,7 +200,7 @@ a.anchor {
 	display: none;
 }
 
-.bar .responsive{
+/*.bar .responsive{
 	background-color: cyan;
 	height:100%;
 	flex-wrap: wrap;
@@ -213,7 +213,7 @@ a.anchor {
 	height: 50px;
 	background-color: #eee;
 	border-style: solid;
-}
+}*/
 
 /******mobile nav overlay******/
 
