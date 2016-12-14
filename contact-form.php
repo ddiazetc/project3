@@ -1,6 +1,7 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
+    <!--Daniel Diaz-Etchevehere CSC174 Project 3-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
@@ -15,45 +16,44 @@
 </head>
 
 <body>
-	<h1>Contact</h1> -->
+<div class="cover">
+
+<?php include 'inc/nav.inc' ?>
+
+<div class="container">
+    <section>
+        <h2>Contact</h2>
 	<!-- <form action="database-write.php" name="myForm" onsubmit="return(validate());"> -->
 
-	<!-- <form action="database-write.php" method="post">
-	<div>
-		<label for="firstname">First name</label>
-		<input type="text" name="firstname" />
-		<br>
-	</div>
-	<div>
-		<label for="lastname">Last name</label>
-		<input type="text" name="lastname" />
-		<br>
-	</div>
-	<div>
-		<label for="phone">Telephone</label>
-		<input type="text" name="phone" />
-		<br>
-	</div> -->
-<!-- 	<div>
-		<label for="msg_input">msg input</label>
-		<textarea name="msg_input" form="myForm"></textarea>
-		<br>
-	</div> -->
-<!-- 	<input type="submit" value="Send">
-	
-	</form> -->
-<!-- 	<form action="database-write.php" name="myForm" method="post">
-		<h2>Name:</h2>
-		<input type="text" name="Name_input" />
-		<h2>Email:</h2>
-		<input type="text" name="Email_input" />
-		<h2>Phone number:</h2>
-		<input type="text" name="Phone_input" />
-		<h2>Message:</h2>
-		<textarea name="msg_input" form="myForm"></textarea>
-	    <h2>Submit form</h2>
-    	<input type="submit" value="Send" />
-	</form> -->
+		<form action="database-write.php" name="myForm" method="post">
+			<div>
+				<label for="name-input">Name</label>
+				<input type="text" name="name-input" /> <!--don't use "name" as name-->
+				<br>
+			</div>
+			<div>
+				<label for="email-input">Email</label>
+				<input type="text" name="email-input" />
+				<br>
+			</div>
+			<div>
+				<label for="phone-input">Phone</label>
+				<input type="text" name="phone-input" />
+				<br>
+			</div>
+			<div>
+				<label for="msg-input">msg input</label>
+				<textarea name="msg-input" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
+				<br>
+			</div>
+			<input type="submit" value="submit" />
+		</form>
+    </section>
+
+    <?php include 'inc/footer.inc' ?>
+
+</div><!--container-->
+</div><!--cover-->
 
 <!-- <script type="text/javascript">
 	function validate(){
@@ -95,64 +95,6 @@
 		return (true);
 	}
 </script> -->
-<!-- </body>
-</html> -->
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
-
-    <title>Contact me</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico">
-
-    <?php include 'inc/fonts.inc' ?>
-
-    <link rel="stylesheet" href="css/fonts.css">
-</head>
-
-<body>
-<div class="cover">
-
-<?php include 'inc/nav.inc' ?>
-
-<div class="container">
-    <section>
-        <h2>Contact</h2>
-	<!-- <form action="database-write.php" name="myForm" onsubmit="return(validate());"> -->
-
-		<form action="database-write.php" name="myForm" method="post">
-			<div>
-				<label for="firstname">First name</label>
-				<input type="text" name="firstname" />
-				<br>
-			</div>
-			<div>
-				<label for="lastname">Last name</label>
-				<input type="text" name="lastname" />
-				<br>
-			</div>
-			<div>
-				<label for="phone">Telephone</label>
-				<input type="text" name="phone" />
-				<br>
-			</div>
-		<!-- 	<div>
-				<label for="msg_input">msg input</label>
-				<textarea name="msg_input" form="myForm"></textarea>
-				<br>
-			</div> -->
-			<input type="submit" value="Send">
-		</form>
-    </section>
-
-    <?php include 'inc/footer.inc' ?>
-
-</div><!--container-->
-</div><!--cover-->
 
 <!--JQuery-->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
