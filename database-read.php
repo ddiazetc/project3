@@ -1,7 +1,6 @@
 <?php
 	// 1. Create a database connection
-	include 'db-info.php';
-	
+	include 'db-info.php';	
 
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
@@ -21,6 +20,7 @@
     <title>Contacts database</title>
     
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
     <link rel="icon" href="images/favicon.ico">
 
     <?php include 'inc/fonts.inc' ?>
@@ -35,33 +35,35 @@
 
 <div class="container">
     <section>
-        <h2>I've been contacted by...</h2>
+    <div id="db-read-content" class="contentitem">
+        <h2 class="section-header">I've been contacted by...</h2>
 
-		<table border>
-		<tr>
-			<th>Id</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>Phone Number</th>
-			<th>Message</th>
-		</tr>
+		<div id="db-read-table">
+			<table align="center">
+				<tr>
+					<th align="left">ID</th>
+					<th align="left">Name</th>
+					<th align="left">Email</th>
+					<th align="left">Phone #</th>
+					<th align="left">Message</th>
+				</tr>
 
-	<?php
-		// 3. Use returned data (if any)
-		while($pages = mysqli_fetch_assoc($result)) {
-			// output data from each row
-	?>
-		<tr>
-			<td><?php echo $pages["id"]; ?></td>
-			<td><?php echo $pages["name"]; ?></td>
-			<td><?php echo $pages["email"]; ?></td>
-			<td><?php echo $pages["phone"]; ?></td>
-			<td><?php echo $pages["message"]; ?></td>
-		</tr>
-	<?php } ?>
-	</table>
-
-	<a href=".">Back to the Index</a>
+				<?php
+				// 3. Use returned data (if any)
+				while($pages = mysqli_fetch_assoc($result)) {
+					// output data from each row
+				?>
+					<tr>
+						<td><?php echo $pages["id"]; ?></td>
+						<td><?php echo $pages["name"]; ?></td>
+						<td><?php echo $pages["email"]; ?></td>
+						<td><?php echo $pages["phone"]; ?></td>
+						<td><?php echo $pages["message"]; ?></td>
+					</tr>
+				<?php } ?>
+			</table>
+		</div>
+	</div><!--contentitem-->
     </section>
 
     <?php include 'inc/footer.inc' ?>
@@ -69,24 +71,8 @@
 </div><!--container-->
 </div><!--cover-->
 
-<!--JQuery-->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<?php include 'inc/js-scripts.inc' ?>
 
-<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
-<script src="js/open-nav.js"></script>
-
-<!--Smooth scroll-->
-<script src="js/smoothscroll.js"></script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-76799908-3', 'auto');
-    ga('send', 'pageview');
-</script>
 </body>
 </html>              
 

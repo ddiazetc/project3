@@ -1,21 +1,13 @@
+<!--Daniel Diaz-Etchevehere CSC174 Project 3-->
 <?php
-	var_dump($_POST);
+	//var_dump($_POST); //this checks if the form inputs went through
 
-	// if(isset($_REQUEST['submit'])){
- // 		 $test = $_REQUEST['name_input'];
- // 		 echo $test;
-	// }
-
-	// echo $_POST['name_input'];
 	echo 'why';
 	$name_input = Trim(stripslashes( $_POST['name-input'] ) );
 	$email_input = Trim(stripslashes( $_POST['email-input'] ) );
 	$phone_input = Trim(stripslashes( $_POST['phone-input'] ) );
 	$msg_input = Trim(stripslashes($_POST['msg-input']));
 
-	
-
-	// echo $firstname;
 
 	include 'db-info.php';
 	

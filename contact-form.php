@@ -8,6 +8,7 @@
     <title>Contact me</title>
     
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
     <link rel="icon" href="images/favicon.ico">
 
     <?php include 'inc/fonts.inc' ?>
@@ -28,19 +29,19 @@
 				<form id="contact-form" action="database-write.php" name="myForm" method="post" onsubmit="return(validate());">
 					<div>
 						<label class="form-label" for="name-input">Name</label>
-						<input class="form-field" type="text" name="name-input" /> <!--don't use "name" as name-->
+						<input class="form-field" type="text" name="name-input" id="name-input" /> <!--don't use "name" as name-->
 					</div>
 					<div>
 						<label class="form-label" for="email-input">Email</label>
-						<input class="form-field" type="text" name="email-input" />
+						<input class="form-field" type="text" name="email-input" id="email-input" />
 					</div>
 					<div>
 						<label class="form-label" for="phone-input">Phone</label>
-						<input class="form-field" type="text" name="phone-input" />
+						<input class="form-field" type="text" name="phone-input" id="phone-input" />
 					</div>
 					<div>
 						<label class="form-label" for="msg-input">Send me a message!</label>
-						<textarea class="form-field" name="msg-input" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
+						<textarea class="form-field" name="msg-input" id="msg-input	" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
 					</div>
 					<input type="submit" value="Submit" />
 				</form>
@@ -53,41 +54,42 @@
 </div><!--container-->
 </div><!--cover-->
 
-<script> //don't need type="text/javascript"?
+<script type="text/javascript"> //don't need type="text/javascript"?
 	function validate(){
 		//validate name
-		if(document.myForm.Name.value == ""){
+		if(document.myForm['name-input'].value == ""){
 			alert("Provide your name");
 			document.myForm.Name.focus();
 			return false;
 		}
 
 		//validate email
-		if(document.myForm.Email.value == ""){
+		if(document.myForm['email-input'].value == ""){
 			alert("Provide your email");
-			document.myForm.Email.focus();
+			document.myForm['email-input'].focus();
 			return false;
 		} else {
-			var emailID = document.myForm.Email.value;
+			var emailID = document.myForm['email-input'].value;
 			at_pos = emailID.indexOf("@");
 			dot_pos = emailID.lastIndexOf(".");
 			if(at_pos < 1 || (dot_pos - at_pos < 2)){
 				alert("You failed at writing your email.")
-				document.myForm.Email.focus();
+				document.myForm['email-input'].focus();
+				return false;
 			}
-			return false;
 		}
 		
-		//validate phone
-		if(document.myForm.Phone.value == "" || isNaN(document.myForm.Phone.value) || document.myForm.Phone.value.length != 10){
+		//validate phone 
+		if(document.myForm['phone-input'].value == "" || isNaN(document.myForm['phone-input'].value) || document.myForm['phone-input'].value.length != 10){
 			alert("Provide a phone number 10 digits in length");
-			document.myForm.Phone.focus();
+			document.myForm['phone-input'].focus();
 			return false;
 		}
 
 		//validate message
-		if(document.myForm.msg.value == ""){
+		if(document.myForm['msg-input'].value == ""){
 			alert("Please send me a message! :-)");
+			document.myForm['msg-input'].focus();
 			return false;
 		}
 		return (true);

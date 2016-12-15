@@ -1,7 +1,6 @@
 <!--Fullscreen overlay for mobile-->
 <div id="mobile-nav" class="overlay fade fadeOut">
-    <div id= "overlay-content-ID" class="overlay-content" >
-        <!-- <a style="color: #c5d6e0" class="mobile-nav-me mobile-nav-a" href="#top" onclick="openNav()"><strong>Danny Diaz-Etchevehere</strong></a> -->
+    <div id="overlay-content-ID" class="overlay-content">
         <a class="mobile-nav-me mobile-nav-a" href="#top" onclick="openNav()"><strong>Danny Diaz-Etchevehere</strong></a>
         <a href="index.php" class="mobile-nav-a" onclick="openNav()">Home</a>
         <a href="projects.php" class="mobile-nav-a" onclick="openNav()">More projects</a>

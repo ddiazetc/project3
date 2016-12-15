@@ -7,6 +7,7 @@
     <title>Projects</title>
     
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
     <link rel="stylesheet" href="lightslider-master/src/css/lightslider.css"> 
     <link rel="stylesheet" href="css/lightSlider-styles.css">
     <link rel="icon" href="images/favicon.ico">
