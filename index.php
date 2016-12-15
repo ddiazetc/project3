@@ -177,7 +177,7 @@
         <div id="about-content" class="contentitem">
             <h2 class="section-header">About</h2>
             <div class="about-div">
-                <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in storytelling using all kinds of digital media and combining these media into new forms of storytelling.</p>
+                <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in finding new ways to tell stories with digital media.</p>
                 <p><a class="my-link" href="Diaz-Etchevehere_Daniel_CV_11_14_16.pdf">CV</a> | <a class="my-link" href="https://www.linkedin.com/in/daniel-diaz-etchevehere-02985b82">LinkedIn</a> | <strong>Contact</strong>: ddiazetc@u.rochester.edu</p>
 
                 </div>
@@ -223,14 +223,5 @@
 <!--Smooth scroll-->
 <script src=js/smoothscroll.js></script>
 
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-76799908-3', 'auto');
-    ga('send', 'pageview');
-</script>
 </body>
 </html>
