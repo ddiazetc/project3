@@ -34,7 +34,7 @@
                 <h3>Virtual Reality</h3>
                     <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
                     <p>Created a storytelling experience based on data from the group’s project DataUSA in virtual reality using Unreal Engine 4 and Vive. Programmed 3D visualizations of the data and designed the interactions with the data and the narrative structure.</p>
-                    <p><a class="my-link" href="https://vimeo.com/189385744">Video (password protected)</a> | <a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a></p>
+                    <p><a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a></p>
             </div>
 
             <div>

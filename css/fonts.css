@@ -3,16 +3,16 @@ p, footer{
     color: #232328;
 } 
 
-.bar{
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
-
 h1{
     font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 110%;
     margin-bottom: 2px;
+}
+
+.bar{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
 }
 
 .nav-a{
@@ -60,6 +60,10 @@ a:visited{
 
 a{
     text-decoration: none;
+}
+
+input[type=submit]{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial;
 }
 
 /**** overlay nav ****/

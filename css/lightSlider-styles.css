@@ -1,20 +1,21 @@
-#lightSlider-portfolio{
-    /*width:420px;*/
-
-}
-ul {
+/*
+Daniel Diaz-Etchevehere CSC174 Project 3
+*/
+.lightSlider-ul{
     list-style: none outside none;
     padding-left: 0;
     margin-bottom:0;
 }
-li {
-    display: block;
+
+.lightSlider-li{
+        display: block;
    /* float: left;*/
     /*margin-right: 6px;*/
     cursor:pointer;
 }
-img {
-    display: block;
+
+.lightSlider-img{
+        display: block;
     border-radius: 5px;
     height: auto;
     max-width: 100%;

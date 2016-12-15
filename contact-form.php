@@ -16,38 +16,36 @@
 </head>
 
 <body>
-<div class="cover">
+<div class="cover contact-form-cover">
 
 <?php include 'inc/nav.inc' ?>
 
 <div class="container">
     <section>
-        <h2>Contact</h2>
-	<!-- <form action="database-write.php" name="myForm" onsubmit="return(validate());"> -->
-
-		<form action="database-write.php" name="myForm" method="post">
-			<div>
-				<label for="name-input">Name</label>
-				<input type="text" name="name-input" /> <!--don't use "name" as name-->
-				<br>
-			</div>
-			<div>
-				<label for="email-input">Email</label>
-				<input type="text" name="email-input" />
-				<br>
-			</div>
-			<div>
-				<label for="phone-input">Phone</label>
-				<input type="text" name="phone-input" />
-				<br>
-			</div>
-			<div>
-				<label for="msg-input">msg input</label>
-				<textarea name="msg-input" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
-				<br>
-			</div>
-			<input type="submit" value="submit" />
-		</form>
+		<div id="contact-form-content" class="contentitem">
+			<h2 class="section-header">Contact</h2>
+			<div id="contact-form-div">
+				<form id="contact-form" action="database-write.php" name="myForm" method="post" onsubmit="return(validate());">
+					<div>
+						<label class="form-label" for="name-input">Name</label>
+						<input class="form-field" type="text" name="name-input" /> <!--don't use "name" as name-->
+					</div>
+					<div>
+						<label class="form-label" for="email-input">Email</label>
+						<input class="form-field" type="text" name="email-input" />
+					</div>
+					<div>
+						<label class="form-label" for="phone-input">Phone</label>
+						<input class="form-field" type="text" name="phone-input" />
+					</div>
+					<div>
+						<label class="form-label" for="msg-input">Send me a message!</label>
+						<textarea class="form-field" name="msg-input" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
+					</div>
+					<input type="submit" value="Submit" />
+				</form>
+			</div><!--contact-form-div-->
+		</div><!--contentitem-->
     </section>
 
     <?php include 'inc/footer.inc' ?>
@@ -55,7 +53,7 @@
 </div><!--container-->
 </div><!--cover-->
 
-<!-- <script type="text/javascript">
+<script> //don't need type="text/javascript"?
 	function validate(){
 		//validate name
 		if(document.myForm.Name.value == ""){
@@ -94,25 +92,9 @@
 		}
 		return (true);
 	}
-</script> -->
-
-<!--JQuery-->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-
-<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
-<script src="js/open-nav.js"></script>
-
-<!--Smooth scroll-->
-<script src="js/smoothscroll.js"></script>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-76799908-3', 'auto');
-    ga('send', 'pageview');
 </script>
+
+<?php include 'inc/js-scripts.inc' ?>
+
 </body>
 </html>              
