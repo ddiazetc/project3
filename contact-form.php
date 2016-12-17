@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<?php $thisPage = "Contact" ?>
 <head>
     <!--Daniel Diaz-Etchevehere CSC174 Project 3-->
     <meta charset="utf-8">

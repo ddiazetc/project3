@@ -1,3 +1,4 @@
+/*------------ Base fonts ------------*/
 p, footer{
     font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #232328;
@@ -10,7 +11,18 @@ h1{
     margin-bottom: 2px;
 }
 
-.bar{
+h3{
+    font-family: 'Scada', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------------ Nav fonts ------------*/
+
+.bar{ /*top-nav*/
     font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
@@ -19,16 +31,23 @@ h1{
     color: #5a515e;
 }
 
-.me{
+.top-nav-name{ /*My name in top-nav*/
     color:#000;
 }
 
-.my-list{
+.overlay-content{ /* fullscreen overlay nav */
     font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 
-.memory-fuel{
-    font-size: 300%;
+.active-page{ /*current page highlight*/
+    background-color: #fff;
+}
+
+/*------------ Other elements ------------*/
+
+.hero-header{
+    font-size: 250%;
     font-family: 'Unna', Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-color: #232328;
@@ -40,12 +59,11 @@ h1{
     font-color: #232328;
 }
 
-h3{
-    font-family: 'Scada', Helvetica, Arial, sans-serif;
-    font-weight: 400;
+.my-list{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-/*******Links******/
+/*------------ Hyperlinks ------------*/
 .my-link{
     color: royalblue;
 }
@@ -54,20 +72,6 @@ a:hover{
     text-decoration: none;
 }
 
-a:visited{
-    color: royalblue;
-}
-
-a{
-    text-decoration: none;
-}
-
 input[type=submit]{
     font-family: 'Raleway', Helvetica Neue, Helvetica, Arial;
-}
-
-/**** overlay nav ****/
-.overlay-content {
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 500;
 }

@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+<?php $thisPage = "Home" ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
     <title>Project 3</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
 
     <?php include 'inc/fonts.inc' ?>
 
@@ -22,7 +24,7 @@
 
 <div class="container">
     <div id="top">
-        <h2 class="memory-fuel">Danny Diaz-Etchevehere</h2>
+        <h2 class="hero-header">Danny Diaz-Etchevehere</h2>
         <img src="images/art/laputian-robot.jpg" alt="laputian robot">
     </div>
     <section>

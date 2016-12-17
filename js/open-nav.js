@@ -25,12 +25,3 @@ $('.hamburger-class').click(function() {
 $('.mobile-nav-a').click(function() {
     $('.overlay').toggleClass('fadeOut');
 });
-
-// use this to fix the disappearing close button problem (the user resizes the window and the close button disappears). this would be fixed by having a separate close button to display / hide
-// function closeNav() {
-//     document.getElementById("mobile-nav").style.height = "0%";
-// }
-
-//still have the problem of if the user is in mobile mode and then resizes 
-//the window and the hamburger goes away... try using a listener modernweb.com/2014/03/24/using-media-queries-in-javascript
-

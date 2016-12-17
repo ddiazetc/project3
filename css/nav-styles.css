@@ -30,6 +30,8 @@ a.anchor {
 	display: none;
 }
 
+
+
 /*------------ Mobile nav overlay ------------*/
 
 #hamburger{
@@ -48,6 +50,10 @@ a.anchor {
 	opacity: 0;
 	transition: opacity .25s;
 	z-index: -2000;
+}
+
+.mobile-nav-me{
+	color: #d9dee4;
 }
 
 .overlay {
@@ -69,14 +75,8 @@ a.anchor {
 	animation-name: fadeOut;
 }
 
-@-moz-keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
-@-webkit-keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
-@-ms-keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
 @keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
 
-@-moz-keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; }  100% { opacity: 0; visibility: hidden; }}
-@-webkit-keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; }  100% { opacity: 0; visibility: hidden; }}
-@-ms-keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; } 100% { opacity: 0; visibility: hidden; }}
 @keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; } 100% { opacity: 0; visibility: hidden;  }}
 
 .overlay-content {
@@ -107,6 +107,24 @@ a.anchor {
 	font-size: 60px;
 }
 
-.mobile-nav-me{
-	color: #d9dee4;
+/*------------ Media queries ------------*/
+
+@media(max-width: 720px){
+
+	.bar{
+		justify-content: flex-start;
+	}
+
+	.bar .nav-item{
+		display: none;
+	}
+
+	#hamburger{
+		display: block;
+	}
+
+	.menu{
+		margin: 0px 20px;
+		display: block;
+	}
 }

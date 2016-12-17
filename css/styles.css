@@ -91,7 +91,7 @@ footer{
 	font-family: Helvetica, Arial;
 }
 
-/* Each section tag contains a contentitem*/
+/* Each section tag contains a "contentitem" class */
 .contentitem{
 	order: 1;
 	overflow: auto; /*stopped the overflowing of the containeritem over the container*/
@@ -100,6 +100,8 @@ footer{
     margin: 0;
 	padding: 0 30px 30px 30px;
 }
+
+/* ID for each section */
 
 #top{
     margin:0;
@@ -122,6 +124,8 @@ footer{
 	background-color: #adbaca;
 }
 
+/* Miscellaneous */
+
 #propic{
 	max-width: 500px;
 }
@@ -139,7 +143,7 @@ img.displayed{
 	width: 100%;
 }
 
-.memory-fuel{
+.hero-header{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +171,7 @@ img.displayed{
 	margin-bottom: 0;
 }
 
-/*------------ Vimeo container from embedresponsively.com ------------*/
+/*------------ Vimeo container styles from embedresponsively.com ------------*/
 
 .embed-container {
 	position: relative;
@@ -292,28 +296,11 @@ input[type=submit]{
 	margin-right: 5px;
 }
 
-/*------------ Media Queries ------------*/
+/*------------ Media Queries ------------ (don't include those for nav) */ 
 
 @media(max-width: 720px){
 	section{
 		width:100%;
-	}
-
-	.bar{
-		justify-content: flex-start;
-	}
-
-	.bar .nav-item{
-		display: none;
-	}
-
-	#hamburger{
-		display: block;
-	}
-
-	.menu{
-		margin: 0px 20px;
-		display: block;
 	}
 }
 
