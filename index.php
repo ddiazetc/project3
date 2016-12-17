@@ -27,14 +27,34 @@
         <h2 class="hero-header">Danny Diaz-Etchevehere</h2>
         <img src="images/art/laputian-robot.jpg" alt="laputian robot">
     </div>
+
     <section>
+        <div class="z-container">
+            <div class="content">
+                <div class="z-top-row">
+                    <h2 class="z-tagline">VR development | Video game development | Web development | Illustration | Graphic design </h2>
+                    <div class="z-strong-follow-area">
+                        <img class="totoro" src="images/amber_transparent.png" alt="pixelart">
+                    </div>
+                </div>
+                <div class="z-bottom-row">
+                    <div class="z-description">Danny is creating VR applications, video games, animation, websites, and other forms of digital art and storytelling.</div>
+                    <div class="z-fold">Follow me on Tumblr <a href="http://memoryfuel.tumblr.com/"><img class="z-icon" src="images/tumblricon.png" alt="tumblr"></a></div>
+                </div>
+            </div>
+        </div>
         <a class="anchor" id="Research"></a>
         <div id="research-content" class="contentitem">
             <h2 class="section-header">Research</h2>
 
             <div>
                 <h3>Virtual Reality</h3>
+                    <div id="vr-desc">
                     <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
+                    </div>
+                    <div id="vive-div">
+                        <img id="vive-img" src="images/vive-200px.jpg" alt="vive">
+                    </div>
                     <p>Created a storytelling experience based on data from the group’s project DataUSA in virtual reality using Unreal Engine 4 and Vive. Programmed 3D visualizations of the data and designed the interactions with the data and the narrative structure.</p>
                     <p><a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a></p>
             </div>
@@ -61,7 +81,7 @@
             <div id="Transcontinental">
                 <h3>Transcontinental</h3>
                 <!--used embedresponsively.com-->
-                <div class='embed-container'><iframe src='https://player.vimeo.com/video/193284337' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                <div class='embed-container'><iframe src='https://player.vimeo.com/video/193284337' allowFullScreen></iframe></div>
                 <p class="p-no-margin-bottom"><em>Transcontinental</em> is a narrative-based game about a 17-year-old girl traveling back and forth between Washington, DC and California on a train during summer. She finds insight and solace from conversations with strangers along the way, but also a few cold shoulders. The game is an experiment to see if 1) the story of the main character can be told in a nonlinear way through conversations with the train's passengers, since the player is able to choose who to talk to, and 2) if these conversations alone and the implicit goal of learning about the characters in this setting constitute meaningful interaction/decisions in the game.</p>
 				<p>(Work in progress!)</p>
                 <p>Featured in the Independent Variables show, University of Rochester's Sage Art Center, 2016.</p>
@@ -151,9 +171,6 @@
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <!--<div class="swiper-button-next"></div>-->
-                    <!--<div class="swiper-button-prev"></div>-->
                 </div></div>
                 <p>More art: <a class="my-link" href="http://memoryfuel.tumblr.com/">Tumblr</a> | <a class="my-link" href="http://dannayy.deviantart.com/">DeviantArt</a>
             </div>
@@ -188,8 +205,6 @@
                     <img src="images/propicS_h.png" alt="me-h">
                 </div>
             </div>
-
-
         </div><!--About-->
     </section>
 
@@ -203,18 +218,6 @@
 
 <script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
 <script src="js/open-nav.js"></script>
-
-<!-- <script>function myFunction(){
-    var x = document.getElementById("barID");
-
-    if(x.className === "bar"){
-        x.className += " responsive";
-        $('.bar').find('*').addClass('responsive');
-    } else {
-        x.className = "bar";
-        $('.bar').find('*').removeClass('responsive');
-    }
-}</script>  -->
 
 <!-- Swiper plugin for artworks -->
 <script src="Swiper-3.4.0/dist/js/swiper.min.js"></script>

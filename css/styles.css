@@ -171,6 +171,62 @@ img.displayed{
 	margin-bottom: 0;
 }
 
+#vive-img{
+	float: right;
+	display: block;
+	margin: 10px 40px;
+}
+
+/*------------ Z-pattern section styles ------------*/
+
+.z-top-row{
+	display: flex;
+	align-items: center;
+}
+
+.z-bottom-row{
+	display: flex;
+}
+
+.z-tagline{
+	flex: 0 1 60%;
+	text-align: center;
+	vertical-align: 50px;
+	margin: 0;
+	padding: 15px;
+
+}
+
+.z-strong-follow-area{
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.z-description{
+	flex:0 1 60%;
+	margin: 0;
+	padding: 15px;
+	background-color: royalblue;
+}
+
+.z-fold{
+	flex-grow: 1;
+	text-align: center;
+	margin: 0 auto;
+	background-color: aquamarine;
+}
+
+.z-icon{
+	max-width: 50px;
+}
+
+img.z-strong-follow-area{
+	display: block;
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+}
+
 /*------------ Vimeo container styles from embedresponsively.com ------------*/
 
 .embed-container {
@@ -283,17 +339,22 @@ input[type=submit]{
 	overflow-x: auto;
 }
 
+#db-read-table table{
+	margin: 0 auto;
+}
+
+#db-read-table th{
+	margin-left: 0px;
+	margin-right: 5px;
+	text-align: left;
+}
+
 #db-read-table tr{
 	margin: 0 auto;
 }
 
 #db-read-table td{
 	padding-right: 25px;
-}
-
-#db-read-table th{
-	margin-left: 0px;
-	margin-right: 5px;
 }
 
 /*------------ Media Queries ------------ (don't include those for nav) */ 

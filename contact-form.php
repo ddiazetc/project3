@@ -42,7 +42,7 @@
 					</div>
 					<div>
 						<label class="form-label" for="msg-input">Send me a message!</label>
-						<textarea class="form-field" name="msg-input" id="msg-input	" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
+						<textarea class="form-field" name="msg-input" id="msg-input" ></textarea> <!--for some completely inscrutable reason, removing the form attribute made this work.-->
 					</div>
 					<input type="submit" value="Submit" />
 				</form>
@@ -55,12 +55,12 @@
 </div><!--container-->
 </div><!--cover-->
 
-<script type="text/javascript"> //don't need type="text/javascript"?
+<script type="text/javascript">
 	function validate(){
 		//validate name
 		if(document.myForm['name-input'].value == ""){
 			alert("Provide your name");
-			document.myForm.Name.focus();
+			document.myForm['name-input'].focus();
 			return false;
 		}
 

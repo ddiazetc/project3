@@ -12,6 +12,7 @@
 
 <!doctype html>
 <html lang="en">
+<?php $thisPage = "DatabaseRead" ?>
 <head>
     <!--Daniel Diaz-Etchevehere CSC174 Project 3-->
     <meta charset="utf-8">
@@ -39,13 +40,13 @@
         <h2 class="section-header">I've been contacted by...</h2>
 
 		<div id="db-read-table">
-			<table align="center">
+			<table>
 				<tr>
-					<th align="left">ID</th>
-					<th align="left">Name</th>
-					<th align="left">Email</th>
-					<th align="left">Phone #</th>
-					<th align="left">Message</th>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone #</th>
+					<th>Message</th>
 				</tr>
 
 				<?php
