@@ -50,7 +50,7 @@
 				</tr>
 
 				<?php
-				// 3. Use returned data (if any)
+				// 3. Use returned data
 				while($pages = mysqli_fetch_assoc($result)) {
 					// output data from each row
 				?>

@@ -32,14 +32,14 @@
         <div class="z-container">
             <div class="content">
                 <div class="z-top-row">
-                    <h2 class="z-tagline">VR development | Video game development | Web development | Illustration | Graphic design </h2>
+                    <h2 class="z-tagline">VR development <span class="z-line-span">|</span> Environmental science research <span class="z-line-span">|</span> Video game development <span class="z-line-span">|</span> Web development <span class="z-line-span">|</span> Design </h2>
                     <div class="z-strong-follow-area">
                         <img class="totoro" src="images/amber_transparent.png" alt="pixelart">
                     </div>
                 </div>
                 <div class="z-bottom-row">
-                    <div class="z-description">Danny is creating VR applications, video games, animation, websites, and other forms of digital art and storytelling.</div>
-                    <div class="z-fold">Follow me on Tumblr <a href="http://memoryfuel.tumblr.com/"><img class="z-icon" src="images/tumblricon.png" alt="tumblr"></a></div>
+                    <div class="z-description">Danny is creating VR applications, video games, websites, and other forms of digital art and storytelling.</div>
+                    <div class="z-fold">Follow me on Tumblr<br><a href="http://memoryfuel.tumblr.com/"><img class="z-icon" src="images/tumblricon.png" alt="tumblr"></a></div>
                 </div>
             </div>
         </div>
@@ -49,14 +49,20 @@
 
             <div>
                 <h3>Virtual Reality</h3>
-                    <div id="vr-desc">
-                    <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
+                    <div class="vr-top-div">
+                        <div class="vr-descr">
+                            <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
+                        </div>
+                        <div class="vr-vive-img">
+                            <img id="vive-img" src="images/htc_vive.png" alt="vive">
+                        </div>
+                    
                     </div>
                     <div id="vive-div">
-                        <img id="vive-img" src="images/vive-200px.jpg" alt="vive">
+                        
                     </div>
                     <p>Created a storytelling experience based on data from the group’s project DataUSA in virtual reality using Unreal Engine 4 and Vive. Programmed 3D visualizations of the data and designed the interactions with the data and the narrative structure.</p>
-                    <p><a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a></p>
+                    <p><a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a>.</p>
             </div>
 
             <div>
@@ -69,8 +75,6 @@
                 <h3>Nitrogen Stable Isotopes</h3>
                     <p>REU research conducted under the supervision of Scott Wankel (Department of Marine Chemistry & Geochemistry), Woods Hole Oceanographic Institution. Summer 2015. Poster presented at American Geophysical Union Fall Meeting 2015.</p>
                     <p>Investigated the impact of Fe(II) on the isotope dynamics of nitrite and nitrous oxide during simultaneous denitrification and chemodenitrification in anaerobic estuarine sediment incubations.</p>
-                    <a href="images/AGUposter.png"><img class="displayed" src="images/AGUposterS.png" alt="AGU Poster" style="max-width: 700px"></a>
-
             </div>
         </div><!--Research-->
     </section>
@@ -105,75 +109,76 @@
             <div id="illustration-and-graphic-design">
                 <h3>Illustration & graphic design</h3>
                  <!--Swiper -->
-                <div class="additionalcontainer">
+                
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                             <a href="images/art/escape_sq.png"><img class="my-swiper-img" src="images/art/escape_sq.png" alt="escape!"></a>
+                            <img class="my-swiper-img" src="images/art/escape_sq.png" alt="escape!">
                             <div class="text"><p>Escape! Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/laputian-robot_sq.png"><img class="my-swiper-img" src="images/art/laputian-robot_sq.png" alt="laputa"></a>
+                            <img class="my-swiper-img" src="images/art/laputian-robot_sq.png" alt="laputa">
                             <div class="text"><p>Laputian Robot (from Castle in the Sky). Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/lucidity_sq.jpg"><img class="my-swiper-img" src="images/art/lucidity_sq.jpg" alt="lucidity"></a>
+                           <img class="my-swiper-img" src="images/art/lucidity_sq.jpg" alt="lucidity">
                             <div class="text"><p>Lucidity. Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/threshold_sq.jpg"><img class="my-swiper-img" src="images/art/threshold_sq.jpg" alt="threshold"></a>
+                           <img class="my-swiper-img" src="images/art/threshold_sq.jpg" alt="threshold">
                             <div class="text"><p>The Threshold. Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/sample-graphicnovel-pg_sq.png"><img class="my-swiper-img" src="images/art/sample-graphicnovel-pg_sq.png" alt="sample graphic novel page"></a>
+                           <img class="my-swiper-img" src="images/art/sample-graphicnovel-pg_sq.png" alt="sample graphic novel page">
                             <div class="text"><p>Sample graphic novel page. Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/sample-page-2_sq.png"><img class="my-swiper-img" src="images/art/sample-page-2_sq.png" alt="sample graphic novel page 2"></a>
+                            <img class="my-swiper-img" src="images/art/sample-page-2_sq.png" alt="sample graphic novel page 2">
                             <div class="text"><p>Sample graphic novel page. Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/char-designs.png"><img class="my-swiper-img" src="images/art/char-designs.png" alt="char designs"></a>
+                            <img class="my-swiper-img" src="images/art/char-designs.png" alt="char designs">
                             <div class="text"><p>Character designs. Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/dreamconductor_sq.jpg"><img class="my-swiper-img" src="images/art/dreamconductor_sq.jpg" alt="dream conductor"></a>
+                            <img class="my-swiper-img" src="images/art/dreamconductor_sq.jpg" alt="dream conductor">
                             <div class="text"><p>Dream Conductor. Pencil.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/wind-water-within-thee_sq_1500px.png"><img class="my-swiper-img" src="images/art/wind-water-within-thee_sq_1500px.png" alt="spirited away"></a>
+                            <img class="my-swiper-img" src="images/art/wind-water-within-thee_sq_1500px.png" alt="spirited away">
                             <div class="text"><p>In the name of the wind and water within thee... (Spirited Away). Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/what-are-you-looking-at_sq.png"><img class="my-swiper-img" src="images/art/what-are-you-looking-at_sq.png" alt="giraffe man"></a>
+                            <img class="my-swiper-img" src="images/art/what-are-you-looking-at_sq.png" alt="giraffe man">
                             <div class="text"><p>What are You Looking At? Digital drawing.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/ben-kronk_sq.png"><img class="my-swiper-img" src="images/art/ben-kronk_sq.png" alt="ben kronk">
-                            <div class="text"><p>Ben Kronk performance poster. Digital drawing, commissioned.</p></div></a>
+                           <img class="my-swiper-img" src="images/art/ben-kronk_sq.png" alt="ben kronk">
+                            <div class="text"><p>Ben Kronk performance poster. Digital drawing, commissioned.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/brain_xsections_sq.jpg"><img class="my-swiper-img" src="images/art/brain_xsections_sq.jpg" alt="brain xsections"></a>
+                            <img class="my-swiper-img" src="images/art/brain_xsections_sq.jpg" alt="brain xsections">
                             <div class="text"><p>Neural Networks. Painted with Nomi Miller. Acrylic, commissioned.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/discerning_sq.pngc"><img class="my-swiper-img" src="images/art/discerning_sq.png" alt="discerning"></a>
+                            <img class="my-swiper-img" src="images/art/discerning_sq.png" alt="discerning">
                             <div class="text"><p>Discerning. Watercolor.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/ur-h2o_sq.png"><img class="my-swiper-img" src="images/art/ur-h2o_sq.png" alt="UR H2O"></a>
+                            <img class="my-swiper-img" src="images/art/ur-h2o_sq.png" alt="UR H2O">
                             <div class="text"><p>UR H2O. Digital, designed for University of Rochester's Dining & Auxiliary Services.</p></div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="images/art/art-as-activism_sq.jpg"><img class="my-swiper-img" src="images/art/art-as-activism_sq.jpg" alt="art as activism"></a>
+                            <img class="my-swiper-img" src="images/art/art-as-activism_sq.jpg" alt="art as activism">
                             <div class="text"><p>Art as Activism. Digital.</p></div>
                         </div>
-                    </div>
+                    </div><!--swiper-wrapper-->
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-                </div></div>
-                <p>More art: <a class="my-link" href="http://memoryfuel.tumblr.com/">Tumblr</a> | <a class="my-link" href="http://dannayy.deviantart.com/">DeviantArt</a>
-            </div>
+                </div><!--swiper-container-->
+            </div><!--illustration and graphic design-->
+                
+        
             <div id="shows" class="my-list">
                 <h3>Exhibitions</h3>
                 <p>Group shows all in Rochester, NY.</p>
@@ -197,7 +202,7 @@
             <h2 class="section-header">About</h2>
             <div class="about-div">
                 <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in finding new ways to tell stories with digital media.</p>
-                <p><a class="my-link" href="Diaz-Etchevehere_Daniel_CV_11_14_16.pdf">CV</a> | <a class="my-link" href="https://www.linkedin.com/in/daniel-diaz-etchevehere-02985b82">LinkedIn</a> | <strong>Contact</strong>: ddiazetc@u.rochester.edu</p>
+                <p><a class="my-link" href="Diaz-Etchevehere_Daniel_CV_11_14_16.pdf">CV</a> | <strong>Contact</strong>: ddiazetc@u.rochester.edu</p>
 
                 </div>
                 <div class="about-pic"><img id="propic" src="images/propicS_h.png" alt="Danny"></div>

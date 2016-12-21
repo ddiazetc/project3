@@ -17,6 +17,7 @@ h1{
 h3{
     font-family: 'Scada', Helvetica, Arial, sans-serif;
     font-weight: 400;
+    font-size: 16pt;
 }
 
 a{
@@ -47,7 +48,7 @@ a{
     background-color: #fff;
 }
 
-/*------------ Other elements ------------*/
+/*------------ Styling each section, including other pages------------*/
 
 .hero-header{
     font-size: 250%;
@@ -55,9 +56,6 @@ a{
     font-weight: 700;
 }
 
-.z-container{
-    font-family: 'Scada', Helvetica, Arial, sans-serif;
-}
 
 .section-header{
     font-family: 'Scada', Helvetica, Arial, sans-serif;
@@ -66,6 +64,24 @@ a{
 
 .my-list{
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*------------ Z-pattern fonts ------------*/
+
+.z-container{
+    font-family: 'Scada', Helvetica, Arial, sans-serif;
+}
+
+.z-description{
+    font-size: 120%;
+}
+
+.z-fold{
+    font-size: 120%;
+}
+
+.z-line-span{
+    color: #62728c;
 }
 
 /*------------ Hyperlinks ------------*/
@@ -79,4 +95,12 @@ a:hover{
 
 input[type=submit]{
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial;
+}
+
+/*------------ Media queries ------------*/
+
+@media(max-width: 540px){
+    .z-description{
+    font-size: 100%;
+    }
 }

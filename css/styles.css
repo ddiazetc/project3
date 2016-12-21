@@ -29,7 +29,6 @@ header{
  
 h1{
 	margin: 0 20px;
-	font-size: 100%;
 	color: #000;
 }
 
@@ -38,7 +37,6 @@ h2{
 }
 
 h3{
-	font-size: 16pt;
 	margin-bottom: 5px;
 	margin-top: 0px;
 }
@@ -101,7 +99,50 @@ footer{
 	padding: 0 30px 30px 30px;
 }
 
-/* ID for each section */
+.hero-header{ /* My name over the hero image*/ 
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 75px;
+    color: #eee;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.section-header{ /* Underlined header for each section */
+	font-size: 20pt;
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+    margin-top: 10px;
+	border-bottom: solid;
+	border-color: #606068;
+	border-width: 1px;
+}
+
+/* Styling components within each section */
+
+.p-no-margin-bottom{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.img-container img{
+	margin: 0 auto;
+	min-width: 100px;
+}
+
+img.displayed{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 750px;
+	width: 100%;
+}
+
+/* Styling the background of each section */
 
 #top{
     margin:0;
@@ -124,68 +165,19 @@ footer{
 	background-color: #adbaca;
 }
 
-/* Miscellaneous */
-
-#propic{
-	max-width: 500px;
-}
-
-.img-container img{
-	margin: 0 auto;
-	min-width: 100px;
-}
-
-img.displayed{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 750px;
-	width: 100%;
-}
-
-.hero-header{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 75px;
-    color: #eee;
-    margin: 10px auto;
-    text-align: center;
-}
-
-.section-header{
-	font-size: 20pt;
-	text-align: center;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-    margin-top: 10px;
-	border-bottom: solid;
-	border-color: #606068;
-	border-width: 1px;
-}
-
-.p-no-margin-bottom{
-	margin-top: 15px;
-	margin-bottom: 0;
-}
-
-#vive-img{
-	float: right;
-	display: block;
-	margin: 10px 40px;
-}
-
 /*------------ Z-pattern section styles ------------*/
 
 .z-top-row{
 	display: flex;
 	align-items: center;
+	background-color: #d9dee4;
+	padding: 30px 0;
 }
 
 .z-bottom-row{
 	display: flex;
+	background-color: #adbaca;
+	/*min-height: 200px;*/
 }
 
 .z-tagline{
@@ -200,20 +192,24 @@ img.displayed{
 .z-strong-follow-area{
 	margin: 0 auto;
 	padding: 15px;
+	align-self: center;
 }
 
 .z-description{
 	flex:0 1 60%;
 	margin: 0;
-	padding: 15px;
-	background-color: royalblue;
+	padding: 45px 30px;
+	
+	align-self: center;
 }
 
 .z-fold{
 	flex-grow: 1;
 	text-align: center;
-	margin: 0 auto;
-	background-color: aquamarine;
+	/*align-self: center;*/
+	/*vertical-align: center;*/
+	background-color: #7ba9f2;
+	padding: 45px 30px;
 }
 
 .z-icon{
@@ -225,6 +221,29 @@ img.z-strong-follow-area{
 	max-width: 200px;
 	width: 100%;
 	height: auto;
+}
+
+/*------------ F-pattern section styles ------------*/
+
+.vr-top-div{
+	display: flex;
+}
+
+.vr-descr{
+	flex: 0 1 60%;
+}
+
+.vr-vive-img{
+	flex-grow: 1;
+	align-self: center;
+}
+
+#vive-img{
+	/*float: right;*/
+	display: block;
+	/*margin: 10px 40px;*/
+	max-width: 200px;
+	margin: 0 auto 20px auto;
 }
 
 /*------------ Vimeo container styles from embedresponsively.com ------------*/
@@ -252,6 +271,10 @@ img.z-strong-follow-area{
 	border-width: 1px;
 }
 
+.about-div p{
+	margin: 0 0 15px 0;
+}
+
 .about-pic{
 	flex-grow: 1;
 	flex-shrink: 0;
@@ -273,19 +296,8 @@ img.z-strong-follow-area{
 	display:none;
 }
 
-.about-ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.about-ul li{
-	margin: 0;
-	padding: 0;
-}
-
-.about-div p{
-	margin: 0 0 15px 0;
+#propic{
+	max-width: 500px;
 }
 
 /*------------ Contact form styles ------------*/
@@ -385,7 +397,21 @@ input[type=submit]{
 		justify-content: center;
 		flex: 0 1 100%; /*this is needed for centering*/
 	}
+
+	.vr-top-div{
+		display: block;
+	}
+/*	.vr-descr{
+	display: block;
+	width: 100%;
+	border-style: solid;
 }
+
+	.vr-vive-img{
+		display: block;
+		border-style: solid;
+	}
+}*/
 
 @media(max-width: 390px){
 	h1{
@@ -395,4 +421,6 @@ input[type=submit]{
 	img{
 		max-width: 100%;
 	}
+
+
 }
