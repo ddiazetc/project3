@@ -26,13 +26,12 @@
 <?php include 'inc/nav.inc' ?>
 
 <div class="container" data-aos="fade">
-    <div id="top">
-        <h2 class="hero-header" data-aos="fade-up">Danny Diaz-Etchevehere</h2>
-        <img src="images/art/laputian-robot.jpg" alt="laputian robot">
-    </div>
-
-    <section>
-        <div class="z-container" data-aos="fade">
+    <section class="z-content">
+        <div id="top">
+            <h2 class="hero-header" data-aos="fade-up">Danny Diaz-Etchevehere</h2>
+            <img id="hero-img" src="images/art/laputian-robot.jpg" alt="laputian robot">
+        </div>
+        <div class="z-container contentitem" data-aos="fade">
             <div class="content">
                 <div class="z-top-row">
                     <h2 class="z-tagline">VR development <span class="z-line-span">|</span> Video game development <span class="z-line-span">|</span> Web development <span class="z-line-span">|</span> Design <span class="z-line-span">|</span> Environmental science research </h2>
@@ -46,8 +45,11 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="research-content">
         <a class="anchor" id="Research"></a>
-        <div id="research-content" class="contentitem" data-aos="fade">
+        <div class="research-content contentitem" data-aos="fade">
             <h2 class="section-header">Research</h2>
 
             <div>
@@ -79,9 +81,9 @@
             </div>
         </div><!--Research-->
     </section>
-    <section>
+    <section class="game-dev-content">
         <a class="anchor" id="Game-Dev"></a>
-        <div id="game-dev-content" class="contentitem" data-aos="fade">
+        <div class="game-dev-content contentitem" data-aos="fade">
             <h2 class="section-header">Game Development</h2>
             <div id="Transcontinental">
                 <h3>Transcontinental</h3>
@@ -95,9 +97,9 @@
             </div>
         </div><!--Game Dev-->
     </section>
-    <section>
+    <section class="art-content">
         <a class="anchor" id="Art"></a>
-        <div id="art-content" class="contentitem" data-aos="fade">
+        <div class="art-content contentitem" data-aos="fade">
             <h2 class="section-header">Art</h2>
 
             <div id="hours">
@@ -197,9 +199,9 @@
             </div>
         </div><!--Art-->
     </section>
-    <section>
+    <section class="about-content">
         <a class="anchor" id="About"></a>
-        <div id="about-content" class="contentitem" data-aos="fade">
+        <div class="about-content contentitem" data-aos="fade">
             <h2 class="section-header">About</h2>
             <div class="about-div">
                 <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in finding new ways to tell stories with digital media.</p>

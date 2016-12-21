@@ -88,7 +88,8 @@ footer{
 	padding-top: 40px;
 	width: 100%;
 	background-color: #eee;
-	max-width: 960px;
+
+	/*max-width: 960px;*/
 }
 
 .contentitem{ /* Each section tag contains a "contentitem" class */
@@ -96,9 +97,10 @@ footer{
 	overflow: auto; /*stopped the overflowing of the containeritem over the container*/
 	flex: 0 1 100%;
 	width:100%;
-    margin: 0;
+    margin: 0 auto;
 	padding: 0 30px 30px 30px;
 	background-color: #d9dee4;
+	max-width: 960px;
 }
 
 .hero-header{ /* My name over the hero image*/ 
@@ -111,6 +113,11 @@ footer{
     color: #eee;
     margin: 10px auto;
     text-align: center;
+}
+
+#hero-img{
+	width: 960px;
+	margin: 0px;
 }
 
 .section-header{ /* Underlined header for each section */
@@ -147,23 +154,32 @@ img.displayed{
 /* Styling the background of each section */
 
 #top{
-    margin:0;
+    margin:0 auto;
     background-color: #d9dee4
+    max-width: 960px;
 }
 
-#research-content, #project-content, #contact-form-content, #db-read-content{
+.z-content{
 	background-color: #d9dee4;
 }
 
-#game-dev-content{
+.research-content{
+	background-color: #adbaca
+}
+
+#project-content, #contact-form-content, #db-read-content{
+	background-color: #d9dee4;
+}
+
+.game-dev-content{
 	background-color: #c5d6e0;
 }
 
-#art-content{
+.art-content{
 	background-color: #d9dee4;
 }
 
-#about-content{
+.about-content{
 	background-color: #adbaca;
 }
 
@@ -178,7 +194,7 @@ img.displayed{
 
 .z-bottom-row{
 	display: flex;
-	background-color: #adbaca;
+	background-color: #cca170;
 }
 
 .z-tagline{
