@@ -1,12 +1,12 @@
 <!--Daniel Diaz-Etchevehere CSC174 Project 3-->
 <?php
-	//var_dump($_POST); //this checks if the form inputs went through
+	var_dump($_POST); //this checks if the form inputs went through
 
 	echo 'why';
 	$name_input = Trim(stripslashes( $_POST['name-input'] ) );
 	$email_input = Trim(stripslashes( $_POST['email-input'] ) );
 	$phone_input = Trim(stripslashes( $_POST['phone-input'] ) );
-	$msg_input = Trim(stripslashes($_POST['msg-input']));
+	$msg_input = Trim(stripslashes(htmlspecialchars($_POST['msg-input'], ENT_QUOTES) ) );
 
 
 	include 'db-info.php';
