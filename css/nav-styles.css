@@ -15,6 +15,7 @@ Daniel Diaz-Etchevehere CSC174 Project 3
 	background: #eee;
 	padding: 0px 0px;
 	height: 40px;
+	/*material design box shadow from https://codepen.io/sdthornton/pen/wBZdXq*/
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
