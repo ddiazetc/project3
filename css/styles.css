@@ -245,9 +245,7 @@ img.z-strong-follow-area{
 }
 
 #vive-img{
-	/*float: right;*/
 	display: block;
-	/*margin: 10px 40px;*/
 	max-width: 200px;
 	margin: 0 auto 20px auto;
 }

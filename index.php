@@ -27,7 +27,7 @@
 
 <div class="container" data-aos="fade">
     <div id="top">
-        <h2 class="hero-header">Danny Diaz-Etchevehere</h2>
+        <h2 class="hero-header" data-aos="fade-up">Danny Diaz-Etchevehere</h2>
         <img src="images/art/laputian-robot.jpg" alt="laputian robot">
     </div>
 
@@ -35,14 +35,14 @@
         <div class="z-container" data-aos="fade">
             <div class="content">
                 <div class="z-top-row">
-                    <h2 class="z-tagline">VR development <span class="z-line-span">|</span> Environmental science research <span class="z-line-span">|</span> Video game development <span class="z-line-span">|</span> Web development <span class="z-line-span">|</span> Design </h2>
+                    <h2 class="z-tagline">VR development <span class="z-line-span">|</span> Video game development <span class="z-line-span">|</span> Web development <span class="z-line-span">|</span> Design <span class="z-line-span">|</span> Environmental science research </h2>
                     <div class="z-strong-follow-area">
                         <img class="totoro" src="images/amber_transparent.png" alt="pixelart">
                     </div>
                 </div>
                 <div class="z-bottom-row">
                     <div class="z-description">Danny is creating VR applications, video games, websites, and other forms of digital art and storytelling.</div>
-                    <div class="z-fold">Follow me on Tumblr<br><a href="http://memoryfuel.tumblr.com/"><img class="z-icon" src="images/tumblricon.png" alt="tumblr"></a></div>
+                    <div class="z-fold"><strong>Follow me on Tumblr</strong><br><a href="http://memoryfuel.tumblr.com/"><img class="z-icon" src="images/tumblricon.png" alt="tumblr"></a></div>
                 </div>
             </div>
         </div>
@@ -51,9 +51,10 @@
             <h2 class="section-header">Research</h2>
 
             <div>
-                <h3>Virtual Reality</h3>
+                
                     <div class="vr-top-div">
                         <div class="vr-descr">
+                            <h3>Virtual Reality</h3>
                             <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
                         </div>
                         <div class="vr-vive-img">
