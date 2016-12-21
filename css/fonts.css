@@ -66,6 +66,11 @@ a{
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#db-read-table{
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #232328;
+}
+
 /*------------ Z-pattern fonts ------------*/
 
 .z-container{
