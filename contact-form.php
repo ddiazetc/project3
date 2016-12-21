@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
     <title>Contact me</title>
-    
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav-styles.css">
-    <link rel="icon" href="images/favicon.ico">
+    <!--AOS CSS transitions-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <?php include 'inc/fonts.inc' ?>
 
@@ -24,7 +25,7 @@
 
 <div class="container">
     <section>
-		<div id="contact-form-content" class="contentitem">
+		<div id="contact-form-content" class="contentitem" data-aos="fade">
 			<h2 class="section-header">Contact</h2>
 			<div id="contact-form-div">
 				<form id="contact-form" action="database-write.php" name="myForm" method="post" onsubmit="return(validate());">

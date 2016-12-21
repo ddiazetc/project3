@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
     <title>Project 3</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav-styles.css">
 
     <?php include 'inc/fonts.inc' ?>
 
     <link rel="stylesheet" href="css/swiperstyles.css">
+    <!--Swiper-->
     <link rel="stylesheet" href="Swiper-3.4.0/dist/css/swiper.min.css">
+    <!--AOS CSS transitions-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -22,14 +25,14 @@
 
 <?php include 'inc/nav.inc' ?>
 
-<div class="container">
+<div class="container" data-aos="fade">
     <div id="top">
         <h2 class="hero-header">Danny Diaz-Etchevehere</h2>
         <img src="images/art/laputian-robot.jpg" alt="laputian robot">
     </div>
 
     <section>
-        <div class="z-container">
+        <div class="z-container" data-aos="fade">
             <div class="content">
                 <div class="z-top-row">
                     <h2 class="z-tagline">VR development <span class="z-line-span">|</span> Environmental science research <span class="z-line-span">|</span> Video game development <span class="z-line-span">|</span> Web development <span class="z-line-span">|</span> Design </h2>
@@ -44,7 +47,7 @@
             </div>
         </div>
         <a class="anchor" id="Research"></a>
-        <div id="research-content" class="contentitem">
+        <div id="research-content" class="contentitem" data-aos="fade">
             <h2 class="section-header">Research</h2>
 
             <div>
@@ -54,12 +57,9 @@
                             <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
                         </div>
                         <div class="vr-vive-img">
+                            <!--Image from http://www.aerryx.com/assets/images/htc_vive.png-->
                             <img id="vive-img" src="images/htc_vive.png" alt="vive">
                         </div>
-                    
-                    </div>
-                    <div id="vive-div">
-                        
                     </div>
                     <p>Created a storytelling experience based on data from the group’s project DataUSA in virtual reality using Unreal Engine 4 and Vive. Programmed 3D visualizations of the data and designed the interactions with the data and the narrative structure.</p>
                     <p><a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a>.</p>
@@ -80,14 +80,14 @@
     </section>
     <section>
         <a class="anchor" id="Game-Dev"></a>
-        <div id="game-dev-content" class="contentitem">
+        <div id="game-dev-content" class="contentitem" data-aos="fade">
             <h2 class="section-header">Game Development</h2>
             <div id="Transcontinental">
                 <h3>Transcontinental</h3>
                 <!--used embedresponsively.com-->
                 <div class='embed-container'><iframe src='https://player.vimeo.com/video/193284337' allowFullScreen></iframe></div>
                 <p class="p-no-margin-bottom"><em>Transcontinental</em> is a narrative-based game about a 17-year-old girl traveling back and forth between Washington, DC and California on a train during summer. She finds insight and solace from conversations with strangers along the way, but also a few cold shoulders. The game is an experiment to see if 1) the story of the main character can be told in a nonlinear way through conversations with the train's passengers, since the player is able to choose who to talk to, and 2) if these conversations alone and the implicit goal of learning about the characters in this setting constitute meaningful interaction/decisions in the game.</p>
-				<p>(Work in progress!)</p>
+			
                 <p>Featured in the Independent Variables show, University of Rochester's Sage Art Center, 2016.</p>
                 <a href="images/ind_vars.jpg"><img class="displayed" src="images/ind_vars_500px.jpg" alt="show" style="max-width: 400px;"></a>
 
@@ -96,14 +96,14 @@
     </section>
     <section>
         <a class="anchor" id="Art"></a>
-        <div id="art-content" class="contentitem">
+        <div id="art-content" class="contentitem" data-aos="fade">
             <h2 class="section-header">Art</h2>
 
             <div id="hours">
                 <h3>(h)ours</h3>
                 <a href="https://memoryfuel.github.io/hours/"><img id="hours-prev" class="displayed" src="images/hoursposter_transparent.gif" alt="hours preview" ></a>
                 <p><em><a href="https://memoryfuel.github.io/hours/" class="my-link">(h)ours</a></em> is a fictionalized memoir of online roleplaying on forums in grade school. It is about the fantastical worlds can children construct collaboratively even when their conceptions of each other are purely virtual, and these worlds are juxtaposed with the banalities of childhood.</p>
-				<p>(Work in progress!)</p>
+				
             </div>
 
             <div id="illustration-and-graphic-design">
@@ -198,7 +198,7 @@
     </section>
     <section>
         <a class="anchor" id="About"></a>
-        <div id="about-content" class="contentitem">
+        <div id="about-content" class="contentitem" data-aos="fade">
             <h2 class="section-header">About</h2>
             <div class="about-div">
                 <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in finding new ways to tell stories with digital media.</p>
@@ -218,20 +218,13 @@
 </div><!--container-->
 </div><!--cover-->
 
-<!--JQuery-->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-
-<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
-<script src="js/open-nav.js"></script>
+<?php include 'inc/js-scripts.inc' ?>
 
 <!-- Swiper plugin for artworks -->
 <script src="Swiper-3.4.0/dist/js/swiper.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script src="js/swiper-initialize.js"></script>
-
-<!--Smooth scroll-->
-<script src=js/smoothscroll.js></script>
 
 </body>
 </html>

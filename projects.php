@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
     <title>Projects</title>
-    
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav-styles.css">
+    <!--lightSlider-->
     <link rel="stylesheet" href="lightslider-master/src/css/lightslider.css"> 
     <link rel="stylesheet" href="css/lightSlider-styles.css">
-    <link rel="icon" href="images/favicon.ico">
+	<!--AOS CSS transitions-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <?php include 'inc/fonts.inc' ?>
 
@@ -26,7 +28,7 @@
 <div class="container">
     <section>
         <a class="anchor" id="projects"></a>
-        <div id="project-content" class="contentitem">
+        <div id="project-content" class="contentitem" data-aos="fade">
             <h2 class="section-header">Projects</h2>
 
             <!--Used JQuery lightSlider for the portfolio with thumbnails. http://sachinchoolur.github.io/lightslider/index.html-->

@@ -47,6 +47,7 @@ section{
 	display: flex;
 	flex-flow: row wrap;
 	width:100%;
+	background-color: #d9dee4;
 }
 
 p{
@@ -58,6 +59,10 @@ img{
 	max-width: 100%;
 	width:auto;
 	height: auto;
+}
+
+iframe{
+	border: 0 none;
 }
 
 footer{
@@ -97,6 +102,7 @@ footer{
 	width:100%;
     margin: 0;
 	padding: 0 30px 30px 30px;
+	background-color: #d9dee4;
 }
 
 .hero-header{ /* My name over the hero image*/ 
@@ -401,17 +407,6 @@ input[type=submit]{
 	.vr-top-div{
 		display: block;
 	}
-/*	.vr-descr{
-	display: block;
-	width: 100%;
-	border-style: solid;
-}
-
-	.vr-vive-img{
-		display: block;
-		border-style: solid;
-	}
-}*/
 
 @media(max-width: 390px){
 	h1{
