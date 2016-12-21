@@ -155,7 +155,7 @@ img.displayed{
 
 #top{
     margin:0 auto;
-    background-color: #d9dee4
+    background-color: #d9dee4;
     max-width: 960px;
 }
 
@@ -414,6 +414,7 @@ input[type=submit]{
 	.vr-top-div{
 		display: block;
 	}
+}
 
 @media(max-width: 390px){
 	h1{
