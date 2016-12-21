@@ -34,8 +34,6 @@ a.anchor {
 	display: none;
 }
 
-
-
 /*------------ Mobile nav overlay ------------*/
 
 #hamburger{
@@ -73,7 +71,6 @@ a.anchor {
 	animation-name: fadeIn;
 	animation-duration: .25s;
 	animation-fill-mode: forwards;
-	/*transition: 0.5s;*/
 }
 .overlay.fadeOut {
 	animation-name: fadeOut;

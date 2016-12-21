@@ -4,8 +4,7 @@ Daniel Diaz-Etchevehere CSC174 Project 3
 
 /*------------ Base styles ------------*/
 
-/*for new nav*/
-*, *:before, *:after {
+*, *:before, *:after { /*for new nav*/
 	box-sizing: inherit;
 }
 
@@ -77,8 +76,7 @@ footer{
 
 /*------------ Styling each section, including other pages------------*/
 
-/* Cover is an extra div to cover the whole browser so the nav fade can't be seen in the background */
-.cover{
+.cover{ /* Cover is an extra div to cover the whole browser so the nav fade can't be seen in the background */
 	margin: 0px;
 	background-color: #606068;
 }
@@ -91,11 +89,9 @@ footer{
 	width: 100%;
 	background-color: #eee;
 	max-width: 960px;
-	font-family: Helvetica, Arial;
 }
 
-/* Each section tag contains a "contentitem" class */
-.contentitem{
+.contentitem{ /* Each section tag contains a "contentitem" class */
 	order: 1;
 	overflow: auto; /*stopped the overflowing of the containeritem over the container*/
 	flex: 0 1 100%;
@@ -183,7 +179,6 @@ img.displayed{
 .z-bottom-row{
 	display: flex;
 	background-color: #adbaca;
-	/*min-height: 200px;*/
 }
 
 .z-tagline{
@@ -212,8 +207,6 @@ img.displayed{
 .z-fold{
 	flex-grow: 1;
 	text-align: center;
-	/*align-self: center;*/
-	/*vertical-align: center;*/
 	background-color: #7ba9f2;
 	padding: 45px 30px;
 }
@@ -414,6 +407,4 @@ input[type=submit]{
 	img{
 		max-width: 100%;
 	}
-
-
 }
